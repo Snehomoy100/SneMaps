@@ -4,7 +4,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic25laG9tb3kxMDAiLCJhIjoiY2tvNjBnaGY5MWhtZzJxb
         })
 
 
-        
+
         function successLocation(position) {
 
             // console.log(position);
@@ -35,7 +35,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic25laG9tb3kxMDAiLCJhIjoiY2tvNjBnaGY5MWhtZzJxb
                     accessToken: mapboxgl.accessToken
                   });
 
-                  map.addControl(directions, 'top-left');
+                map.addControl(directions, 'top-left');
         };
 
         
