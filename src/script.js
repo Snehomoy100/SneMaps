@@ -3,14 +3,23 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic25laG9tb3kxMDAiLCJhIjoiY2tvNjBnaGY5MWhtZzJxb
             enableHighAccuracy: true
         })
 
+
+        
         function successLocation(position) {
+
             // console.log(position);
+
             pinLocation([position.coords.longitude, position.coords.latitude])
+
         };
+
+
 
         function errorLocaion() {
-
+            console.log("Error!");
         };
+
+
 
         function pinLocation(center) {
             const map = new mapboxgl.Map({
